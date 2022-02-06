@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Golden Ring: Wheather forecast</title>
+
+    <link rel="icon" href="favicon.ico"><!--32x32-->
+    <!-- <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">--><!--152x152-->
+    <!-- <link rel="apple-touch-icon" href="favicons/180.png">--><!--180x180-->
+    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="logo">
+          <img class="logo__img" src="img/logo.svg" width="123" height="60" alt="forecast log">
+        </a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <div class="dropdown">
+              <label class="dropdown__title">Город:</label>
+              <select class="dropdown__item">
+                <option class="dropdown___subitem" value="496638">Сергиев Посад</option>
+                <option class="dropdown__subitem" value="511359">Переславль-Залесский</option>
+                <option class="dropdown__subitem" value="501183">Ростов</option>
+                <option class="dropdown__subitem" value="468902">Ярославль</option>
+                <option class="dropdown__subitem" value="543878">Кострома</option>
+                <option class="dropdown__subitem" value="555312">Иваново</option>
+                <option class="dropdown__subitem" value="485824">Суздаль</option>
+                <option class="dropdown__subitem" value="473247">Владимир</option>
+              </select>
+            </div>
+          </li>
+          <li class="main-navigation__item"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-page">
+    <div class="container">
+      <h1 class="main-page__title">Прогноз погоды в городах &laquo;Золотого кольца&raquo;:</h1>
+      <ul class="main-page__list">
+        <li class="main-page__item">
+          <article class="product">
+            <h2 class="product__title">Название города</h2>
+            <img class="product__icon" src="#" width="60" height="60" alt="Картинка-прогноз">
+            <div class="product__wrapper">
+              <dl class="product__info">
+                <dt class="product__option">Температура:</dt>
+                <dd class="product__value"></dd>
+              </dl>
+              <dl class="product__info">
+                <dt class="product__option">Ощущается как:</dt>
+                <dd class="product__value"></dd>
+              </dl>
+              <dl class="product__info">
+                <dt class="product__option">Ветер:</dt>
+                <dd class="product__value"></dd>
+              </dl>
+              <dl class="product__info">
+                <dt class="product__option">Подробнее:</dt>
+                <dd class="product__value"></dd>
+              </dl>
+            </div>
+          </article>
+        </li>
+
+        <!--Переславль-Залесский,Ростов,Ярославль,Кострома,Иваново,Суздаль,Владимир-->
+      </ul>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="production">&copy;riomaria, 2022.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
